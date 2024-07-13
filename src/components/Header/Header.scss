@@ -1,0 +1,143 @@
+@import '../../common-styles/variables.scss';
+
+.header{
+
+    .container{
+
+        .header_inr{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+
+            @media (max-width: 991.98px) {
+                padding: 12px 0;
+            }
+
+            .menu_icon_otr{
+                display: none;
+                transition: .3s;
+
+                &:hover{
+
+                    .icon{
+                        color: $Primary-color;
+                    }
+                }
+
+                @media (max-width: 991.98px) {
+                    display: block;
+                }
+
+                .icon{
+                    font-size: 24px;
+                    color: $text-color;
+                    transition: .3s;
+                }
+            }
+            
+            .logo_menu_otr{
+                display: flex;
+                align-items: center;
+                gap: 0 24px;
+
+                .logo_otr{
+
+                    .logo_inr{
+
+                        .logo_img{
+                            width: 112px;
+                            height: auto;
+
+                            @media (max-width: 575.98px) {
+                                width: 96px;
+                            }
+                        }
+                    }
+                }
+
+                .menu_otr{
+                    
+                    @media (max-width: 991.98px) {
+                        display: none;
+                    }
+
+                    .menu_ul{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 24px;
+
+                        .menu_li{
+                            
+                            .menu_linkk{
+                                color: $text-color;
+                                transition: .3s;
+
+                                &:hover{
+                                    color: $Primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header_tools_ul{
+                display: flex;
+                align-items: center;
+                gap: 0 32px;
+
+                @media (max-width: 991.98px) {
+                    gap: 0;
+                }
+
+                .header_tools_li{
+
+                    .icon_otr{
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover{
+
+                            .icon{
+                                color: $Primary-color;
+                            }
+                        }
+                        
+                        .icon{
+                            font-size: 24px;
+                            color: $text-color;
+                            transition: .3s;
+                        }
+
+                        .user_icon,
+                        .heart_icon,
+                        .menu_icon{
+                            
+                            @media (max-width: 991.98px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.headerInner{
+    text-align: center;
+    margin-bottom: 36px;
+
+    .heading{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        color: $text-color;
+
+        .heading_inr{
+            padding-left: 10px;
+        }
+    }
+}

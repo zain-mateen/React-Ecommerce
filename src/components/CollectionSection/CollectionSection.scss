@@ -1,0 +1,125 @@
+@import '../../common-styles/variables.scss';
+
+.CollectionSection{
+    padding: 112px 0;
+
+    @media (max-width: 991.98px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .CollectionSection_inr{
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(286px, auto);
+            grid-auto-flow: dense;
+
+            @media (max-width: 1399.98px) {
+                grid-auto-rows: minmax(240px, auto);
+            }
+
+            @media (max-width: 1199.98px) {
+                grid-auto-rows: minmax(200px, auto);
+            }
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-rows: minmax(240px, auto);
+            }
+
+            .collection_box_otr{
+
+            }
+
+            .box_1{
+                grid-column: span 2;
+                grid-row: span 2;
+
+                @media (max-width: 991.98px) {
+                    grid-row: span 1;
+                    grid-column: span 1;
+                }
+            }
+
+            .box_2{
+                grid-column: span 2;
+
+                @media (max-width: 991.98px) {
+                    grid-column: span 1;
+                }
+            }
+
+            .box_4{
+                background-color: rgb(245, 230, 224);
+            }
+        }
+    }
+}
+
+.collection_box_inr{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .background_img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .content{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        padding: 30px 30px 0 0;
+
+        @media (max-width: 1399.98px) {
+            bottom: 20px;
+            left: 16px;
+        }
+
+        .text{
+            text-transform: uppercase;
+            color: $text-color;
+            margin-bottom: 4px;
+        }
+
+        .heading{
+            display: flex;
+            flex-wrap: wrap;
+            text-transform: uppercase;
+            color: $text-color;
+            margin-bottom: 8px;
+
+            .heading_inr{
+                color: $text-color;
+                padding-right: 8px;
+            }
+        }
+
+        .desc{
+            color: $text-color;
+            margin-bottom: 4px;
+        }
+
+        .action_otr{
+
+            .shop_btn{
+
+            }
+        }
+    }
+}

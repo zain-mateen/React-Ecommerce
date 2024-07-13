@@ -1,0 +1,78 @@
+@import '../../common-styles/variables.scss';
+
+.LimitedItemSection{
+
+    .limitedItem_inr{
+        background-image: url('../../img//limiteditem-img.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+        position: relative;
+
+        .wrapper{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.banner_main{
+
+    .container{
+
+        .row_custom{
+
+            .col_box_otr{
+                height: 400px;
+                
+                .banner_1{
+
+                    .content{
+                        
+                        .text{
+                            color: $White;
+                        }
+
+                        .heading{
+                            color: $White;
+
+                            .heading_inr{
+                                text-transform: capitalize;
+                                color: $White;
+                                font-family: $font-family-Jost-Medium;
+                            }
+                        }
+
+                        .action_otr{
+
+                            .shop_btn{
+                                color: $White;
+
+                                &::after{
+                                    background-color: $White;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .banner_2{
+
+                    .content{
+
+                        .heading{
+
+                            .heading_inr{
+                                text-transform: capitalize;
+                                font-family: $font-family-Jost-Medium;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
