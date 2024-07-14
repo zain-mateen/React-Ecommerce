@@ -82,6 +82,18 @@ h6{
     }
 }
 
+.container_fluid2{
+    padding: 0 60px;
+
+    @media (max-width: 1499.98px) {
+        padding: 0 24px;
+    }
+
+    @media (max-width: 991.98px) {
+        padding: 0 15px;
+    }
+}
+
 .heading-markup{
   font-size: $font-size-120px;
   font-family: $font-family-Jost-Bold;

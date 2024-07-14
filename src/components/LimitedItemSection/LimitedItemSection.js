@@ -1,21 +1,30 @@
 import React from 'react';
 import './LimitedItemSection.scss';
-import { Link } from 'react-router-dom';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
 import { BannerSectionData } from '../../Data';
 import CollectionCart from '../CollectionSection/CollectionCart';
+import CountdownTimer from '../CountdownTimer/CountdownTimer';
+import { Link } from 'react-router-dom';
+import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
 const LimitedItemSection = () => {
     return (
         <>
             <section class="LimitedItem">
-                <div class="deal-timer-wrapper container position-relative">
-                    <div class="deal-timer__content pb-2 mb-3 pb-xl-5 mb-xl-3 mb-xxl-5">
-                        <p class="text_dash text-uppercase text-red fw-medium">Deal of the week</p>
-                        <h3 class="h1 text-uppercase">
-                            <strong>Spring </strong>
-                            Collection</h3>
-                        <a class="primary_underline_btn" href="/">Shop Now</a>
+                <div className="container_fluid2">
+                    <div className="limitedItem_inr">
+                        <div className="wrapper">
+                            <h6 className="title heading-xs">Deal of the Week</h6>
+                            <h1 className="heading heading-h1-regular"><span className='heading_inr heading-h1-bold'>Spring</span> Collection</h1>
+                            <Link className="action_otr">
+                                <ThemeBtn 
+                                    ButtonClass='primary_underline_btn discover_btn'
+                                    ButtonText='Shop Now'
+                                />
+                            </Link>
+                        </div>
+                        <div className="countdown_timer_main">
+                            <CountdownTimer targetDate="2024-12-31T00:00:00" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -23,7 +32,7 @@ const LimitedItemSection = () => {
                 <div className="container">
                     <div className="row row_custom">
                         {BannerSectionData.map((item) => (
-                            <div className="col-lg-6 col_box_otr" key={item.id}>
+                            <div className="col-lg-6 col-md-6 col_box_otr" key={item.id}>
                                 <CollectionCart 
                                     key={item.id}
                                     boxClass={item.boxClass}

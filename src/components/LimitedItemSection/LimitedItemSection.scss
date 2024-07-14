@@ -1,20 +1,92 @@
 @import '../../common-styles/variables.scss';
 
-.LimitedItemSection{
+.LimitedItem{
+    margin-bottom: 48px;
 
-    .limitedItem_inr{
-        background-image: url('../../img//limiteditem-img.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 600px;
-        width: 100%;
-        position: relative;
+    @media (max-width: 575.98px) {
+        margin-bottom: 36px;
+    }
 
-        .wrapper{
-            position: absolute;
-            bottom: 0;
-            left: 0;
+    .container_fluid2{
+
+        .limitedItem_inr{
+            background-image: url('../../img//limiteditem-img.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            position: relative;
+
+            @media (max-width: 1199.98px) {
+                height: 450px;
+            }
+
+            @media (max-width: 991.98px) {
+                height: 350px;
+            }
+
+            @media (max-width: 575.98px) {
+                height: 280px;
+            }
+
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                padding-left: 156px;
+
+                @media (max-width: 1499.98px) {
+                    padding-left: 5%;
+                }
+
+                .title{
+                    text-transform: uppercase;
+                    color: $Primary-color;
+                    padding-left: 52px;
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 2.5rem;
+                        height: 2px;
+                        margin-top: -1px;
+                        background-color: currentColor;
+                        color: inherit;
+                    }
+                }
+
+                .heading{
+                    text-transform: uppercase;
+                    margin: 8px 0 16px;
+                    color: $text-color;
+
+                    @media (max-width: 575.98px) {
+                        margin: 4px 0 8px;
+                    }
+                }
+
+                .action_otr{
+
+                }
+            }
+
+            .countdown_timer_main{
+                position: absolute;
+                left: 156px;
+                bottom: 32px;
+
+                @media (max-width: 1499.98px) {
+                    left: 5%;
+                }
+
+                @media (max-width: 767.98px) {
+                    bottom: 16px;
+                }
+            }
         }
     }
 }
@@ -24,9 +96,18 @@
     .container{
 
         .row_custom{
+            gap: 24px 0;
 
             .col_box_otr{
                 height: 400px;
+
+                @media (max-width: 1199.98px) {
+                    height: 300px;
+                }
+
+                @media (max-width: 991.98px) {
+                    height: 230px;
+                }
                 
                 .banner_1{
 

@@ -4,7 +4,7 @@ import CollectionSection from '../../components/CollectionSection/CollectionSect
 import ProductSection from '../../components/ProductSection/ProductSection';
 import LimitedEditionSection from '../../components/LimitedEditionSection/LimitedEditionSection';
 import InstagramSection from '../../components/InstagramSection/InstagramSection';
-// import LimitedItemSection from '../../components/LimitedItemSection/LimitedItemSection';
+import LimitedItemSection from '../../components/LimitedItemSection/LimitedItemSection';
 
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
             <CollectionSection />
             <ProductSection />
             <LimitedEditionSection />
-            {/* <LimitedItemSection /> */}
+            <LimitedItemSection />
             <InstagramSection />
         </>
     );

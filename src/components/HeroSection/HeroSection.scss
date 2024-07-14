@@ -26,7 +26,7 @@
                     padding: 10px;
                     border: 1px solid #eee !important;
 
-                    @media (max-height: 1499.98px) {
+                    @media (max-width: 1499.98px) {
                         padding: 0;
                         border: none;
                     }
@@ -196,7 +196,7 @@
                 margin-bottom: 48px;
                 width: auto;
 
-                @media (max-height: 991.98px) {
+                @media (max-width: 991.98px) {
                     left: 5%;
                     margin-bottom: 32px;
                 }
@@ -248,7 +248,7 @@
         bottom: 0;
         right: 0;
 
-        @media (max-height: 1499.98px) {
+        @media (max-width: 1499.98px) {
             display: none;
         }
 
@@ -280,7 +280,7 @@
         left: 0;
         transform: translateY(-50%);
 
-        @media (max-height: 1499.98px) {
+        @media (max-width: 1499.98px) {
             display: none;
         }
 

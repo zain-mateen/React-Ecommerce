@@ -1,0 +1,70 @@
+@import '../../common-styles/variables.scss';
+
+.coundown_timer{
+    display: flex;
+    align-items: center;
+    gap: 0 48px;
+
+    @media (max-width: 767.98px) {
+        gap: 0 24px;
+    }
+
+    .time_text_otr{
+        text-align: center;
+        position: relative;
+
+        &:not(:last-child){
+            
+            &::after{
+                content: ":";
+                position: absolute;
+                top: 50%;
+                right: -30px;
+                transform: translateY(-50%);
+                font-size: 36px;
+                font-family: 'Jost-Medium';
+
+                @media (max-width: 767.98px) {
+                    right: -20px;
+                    font-size: 28px;
+                }
+
+                @media (max-width: 575.98px) {
+                    font-size: 20px;
+                    right: -16px;
+                }
+            }
+        }
+
+        .time{
+            font-size: 30px;
+            font-family: $font-family-Jost-Regular;
+            color: $text-color;
+
+            @media (max-width: 991.98px) {
+                font-size: 24px;
+            }
+
+            @media (max-width: 575.98px) {
+                font-size: 16px;
+            }
+        }
+
+        .text{
+            text-transform: uppercase;
+            font-size: $font-size-16px;
+            line-height: 1.2;
+            font-family: $font-family-Jost-Bold;
+            color: $text-secondary;
+
+            @media (max-width: 991.98px) {
+                font-size: $font-size-14px;
+                font-family: $font-family-Jost-Medium;
+            }
+
+            @media (max-width: 575.98px) {
+                font-size: 8px;
+            }
+        }
+    }
+}
