@@ -33,15 +33,12 @@
                 height: 280px;
             }
 
-            @media (max-width: 1199.98px) {
-                height: 280px;
-            }
-
             @media (max-width: 420px) {
-                height: 350px;
+                height: 200px;
             }
 
             &:hover {
+
                 .img {
                     transform: scale(1.1);
                 }

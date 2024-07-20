@@ -25,9 +25,6 @@ const LimitedEditionSection = () => {
                 <Swiper
                     breakpoints={{
                         0: {
-                            slidesPerView: 1,
-                        },
-                        575: {
                             slidesPerView: 2,
                             spaceBetween: 16,
                         },

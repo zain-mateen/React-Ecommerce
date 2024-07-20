@@ -1,5 +1,142 @@
 @import '../../common-styles/variables.scss';
 
+.navbar_responsive {
+    position: absolute;
+    top: 0;
+    left: -400px;
+    background-color: $White;
+    width: 400px;
+    max-width: 100%;
+    height: 100%;
+    z-index: 999999;
+    transition: .3s;
+
+    &.open {
+        left: 0;
+    }
+
+    .container_fluid {
+
+        .logo_main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0;
+
+            .logo_otr {
+
+                .logo_img {
+                    width: 96px;
+                    height: auto;
+                }
+            }
+
+            .close_menu_icon {
+                cursor: pointer;
+                
+                .icon {
+                    font-size: 24px;
+                    color: $text-color;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $Primary-color;
+                    }
+                }
+            }
+        }
+
+        .menu_ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px 0;
+
+            .menu_li {
+
+                .menu_linkk {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $text-color;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $Primary-color;
+                    }
+
+                    .toggle_icon {
+                        font-size: 20px;
+                        color: $text-color;
+                        transition: .3s;
+                    }
+
+                    .rotate {
+                        transform: rotate(225deg);
+                    }
+                }
+
+                .dropdown_otr {
+                    padding: 0 16px;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all .3s ease-in-out;
+
+                    &.show {
+                        max-height: 500px;
+                        padding: 12px 16px;
+                    }
+
+                    .dropdown_ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px 0;
+
+                        .dropdown_li {
+
+                            .dropdown_linkk {
+                                display: flex;
+                                color: $text-color;
+                                transition: .3s;
+
+                                &:hover {
+                                    color: $Primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .social_ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px 24px;
+            margin-top: 24px;
+
+            .social_li {
+                .social_a {
+                    transition: .3s;
+
+                    &:hover {
+                        .icon {
+                            color: $Primary-color;
+                        }
+                    }
+
+                    .icon {
+                        font-size: 24px;
+                        color: $text-color;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 .header{
 
     .container{
@@ -16,6 +153,7 @@
 
             .menu_icon_otr{
                 display: none;
+                cursor: pointer;
                 transition: .3s;
 
                 &:hover{
@@ -68,6 +206,17 @@
                         gap: 0 24px;
 
                         .menu_li{
+                            position: relative;
+                            transition: .3s;
+
+                            &:hover{
+
+                                .dropdown_otr{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: 100%;
+                                }
+                            }
                             
                             .menu_linkk{
                                 color: $text-color;
@@ -75,6 +224,64 @@
 
                                 &:hover{
                                     color: $Primary-color;
+                                }
+                            }
+
+                            .dropdown_otr{
+                                position: absolute;
+                                top: calc(100% + 45px);
+                                left: 0;
+                                z-index: 9999;
+                                opacity: 0;
+                                visibility: hidden;
+                                padding-top: 30px;
+                                transition: .3s;
+
+                                .dropdown_ul{
+                                    width: 260px;
+                                    padding: 24px 30px 16px;
+                                    background-color: $White;
+                                    box-shadow: 0 .625rem 1.5625rem 0 rgba(34, 34, 34, .05);
+
+                                    .dropdown_li{
+
+                                        .dropdown_linkk{
+                                            padding: 8px 0;
+                                            width: 100%;
+                                            transition: .3s;
+
+                                            &:hover{
+
+                                                span{
+
+                                                    &::after{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+
+                                            span{
+                                                color: $text-color;
+                                                position: relative;
+                                                transition: .3s;
+
+                                                &::after{
+                                                    content: "";
+                                                    display: block;
+                                                    position: absolute;
+                                                    bottom: -4px;
+                                                    left: 0;
+                                                    width: 0;
+                                                    max-width: 100%;
+                                                    height: 3px;
+                                                    transition: width .28s cubic-bezier(.47,0,.745,.715);
+                                                    background-color: $text-color;
+                                                    border-radius: 100px;
+                                                    transition: .3s;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

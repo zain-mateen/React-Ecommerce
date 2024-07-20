@@ -3,7 +3,20 @@ export const NavigationItems = [
     { id: 1, name: 'Home', link: '/' },
     { id: 2, name: 'Shop', link: '/' },
     { id: 3, name: 'Blog', link: '/' },
-    { id: 4, name: 'Pages', link: '/' },
+    { 
+        id: 4, 
+        name: 'Pages', 
+        PagesInnerLink: [
+            { id: 4.1, name: 'My Account', link: '/' },
+            { id: 4.2, name: 'Login / Register', link: '/' },
+            { id: 4.3, name: 'Store Locator', link: '/' },
+            { id: 4.4, name: 'Lookbook', link: '/' },
+            { id: 4.5, name: 'Faq', link: '/' },
+            { id: 4.6, name: 'Terms', link: '/' },
+            { id: 4.7, name: '404 Error', link: '/' },
+            { id: 4.8, name: 'Coming Soon', link: '/' },
+        ]
+    },
     { id: 5, name: 'About', link: '/' },
     { id: 6, name: 'Contact', link: '/' },
 ];
@@ -12,7 +25,6 @@ export const HeaderTools = [
     { id: 1, icon: <i className="icon user_icon ri-user-line"></i> },
     { id: 2, icon: <i className="icon heart_icon ri-heart-line"></i> },
     { id: 3, icon: <i className="icon shop_icon ri-shopping-bag-line"></i> },
-    { id: 4, icon: <i className="icon menu_icon ri-menu-2-line"></i> },
 ];
 
 export const SocialIcons = [
