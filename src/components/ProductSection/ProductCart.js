@@ -18,7 +18,7 @@ const ProductCart = ({
 
     return (
         <div
-            className={`col_box_otr ${cartClass}`}
+            className='col_box_otr'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

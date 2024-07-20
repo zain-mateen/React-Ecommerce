@@ -4,8 +4,18 @@
 
     .container{
 
-        .row_custom{
-            gap: 24px 0;
+        .Product_cart_main{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px 20px;
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .action_otr{
@@ -120,6 +130,10 @@
                 .icon {
                     font-size: 20px;
                     color: $text-secondary;
+
+                    @media (max-width: 575.98px) {
+                        font-size: 16px;
+                    }
                 }
             }
         }

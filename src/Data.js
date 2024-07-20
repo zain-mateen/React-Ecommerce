@@ -94,7 +94,6 @@ export const CollectionSectionData = [
 export const ProductCartData = [
     {
         id: 1,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_1.webp'),
         hoverImage: require('./img/product_1hover.webp'),
         heading: 'Cropped Faux Leather Jacket',
@@ -110,7 +109,6 @@ export const ProductCartData = [
     },
     {
         id: 2,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_2.webp'),
         hoverImage: require('./img/product_2hover.webp'),
         heading: 'Calvin Shorts',
@@ -125,7 +123,6 @@ export const ProductCartData = [
     },
     {
         id: 3,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_3.webp'),
         hoverImage: require('./img/product_3hover.webp'),
         heading: 'Kirby T-Shirt',
@@ -140,7 +137,6 @@ export const ProductCartData = [
     },
     {
         id: 4,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_4.webp'),
         hoverImage: require('./img/product_4hover.webp'),
         heading: 'Cableknit Shawl',
@@ -155,7 +151,6 @@ export const ProductCartData = [
     },
     {
         id: 5,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_5.webp'),
         hoverImage: require('./img/product_5hover.webp'),
         heading: 'Colorful Jacket',
@@ -170,7 +165,6 @@ export const ProductCartData = [
     },
     {
         id: 6,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_6.webp'),
         hoverImage: require('./img/product_6hover.webp'),
         heading: 'Shirt In Botanical Cheetah Print',
@@ -185,7 +179,6 @@ export const ProductCartData = [
     },
     {
         id: 7,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_7.webp'),
         hoverImage: require('./img/product_7hover.webp'),
         heading: 'Cotton Jersey T-Shirt',
@@ -200,7 +193,6 @@ export const ProductCartData = [
     },
     {
         id: 8,
-        cartClass: 'col-lg-3 col-md-4 col-sm-6',
         image: require('./img/product_8.webp'),
         hoverImage: require('./img/product_8hover.webp'),
         heading: 'Zessi Dresses',

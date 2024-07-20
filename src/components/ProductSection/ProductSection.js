@@ -15,11 +15,10 @@ const ProductSection = () => {
                     heading='Our Trendy'
                     headingInner='Products'
                 />
-                <div className="row row_custom">
+                <div className="Product_cart_main">
                     {ProductCartData.map((product) => (
                         <ProductCart
                             key={product.id}
-                            cartClass={product.cartClass}
                             image={product.image}
                             hoverImage={product.hoverImage}
                             heading={product.heading}
