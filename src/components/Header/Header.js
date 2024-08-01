@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+
+import { NavigationItems, SocialIcons } from '../../Data';
+import { CartContext } from '../../context/CartContext';
+import CartIcon from '../CartIcon/CartIcon';
+import CartSlideShow from '../CartSlideShow/CartSlideShow';
+
 import './Header.scss';
+
 import brandLogo from '../../img/brandLogo.webp';
-import { HeaderTools, NavigationItems, SocialIcons } from '../../Data';
 
 const Header = () => {
     const [openDropdown, setOpenDropdown] = useState(null);
     const [isResponsiveNavbarVisible, setResponsiveNavbarVisible] = useState(false);
+    const { isCartOpen } = useContext(CartContext);
 
     const handleToggleDropdown = (id) => {
         setOpenDropdown(openDropdown === id ? null : id);
@@ -68,7 +75,7 @@ const Header = () => {
                     </ul>
                 </div>
             </section>
-            <header className='header'>
+            <header className="header">
                 <div className="container">
                     <div className="header_inr">
                         <div className="menu_icon_otr" onClick={handleToggleResponsiveNavbar}>
@@ -106,16 +113,13 @@ const Header = () => {
                             </nav>
                         </div>
                         <ul className="header_tools_ul">
-                            {HeaderTools.map((item) => (
-                                <li className="header_tools_li" key={item.id}>
-                                    <div className="icon_otr">
-                                        {item.icon}
-                                    </div>
-                                </li>
-                            ))}
+                            <li className="cart_icon_otr">
+                                <CartIcon />
+                            </li>
                         </ul>
                     </div>
                 </div>
+                {isCartOpen && <CartSlideShow />}
             </header>
         </>
     );

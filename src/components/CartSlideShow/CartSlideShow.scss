@@ -1,0 +1,92 @@
+@import '../../common-styles/variables.scss';
+
+.cart_slideshow_container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 420px;
+    max-width: 100%;
+    background-color: $White;
+    z-index: 9999;
+    transition: all .3s;
+    transform: scale(0);
+
+    &.open{
+        transform: scale(1);
+    }
+
+    .cart_slideshow_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 34px 40px 28px;
+        background-color: #faf9f8;
+
+        .heading{
+            text-transform: uppercase;
+            color: $text-color;
+        }
+
+        .icon_otr{
+
+            .icon{
+                font-size: 24px;
+                color: $text-color;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover{
+                    color: $Primary-color;
+                }
+            }
+        }
+    }
+
+    .cart_slideshow_body{
+        padding: 0 20px;
+        height: calc(100% - 280px);
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: $White;
+        }
+
+        &::-webkit-scrollbar{
+            width: 6px;
+            background-color: $White;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background-color: $text-color;
+        }
+    }
+
+    .cart_slideshow_footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 40px 40px 40px;
+
+        .total_main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #e4e4e4;
+            padding: 16px 0 20px;
+
+            .text{
+                text-transform: uppercase;
+                color: $text-color;
+            }
+        }
+
+        .action_main{
+            display: flex;
+            flex-direction: column;
+            gap: 12px 0;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../common-styles/variables.scss';
+
+.checkout_main{
+
+    .container{
+
+        .checkout_header{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: center;
+            padding: 24px 0;
+            border-bottom: 2px solid #e4e4e4;
+
+            .header_block{
+                text-align: center;
+
+                .heading{
+                    text-transform: uppercase;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

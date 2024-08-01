@@ -1,20 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import HeaderInner from '../Header/HeaderInner';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'; // Updated import statements
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
-import { LimitedEditionData } from '../../Data';
+import { ProductsContext } from '../../context/ProductContext';
 import ProductCart from '../ProductSection/ProductCart';
-
 import './LimitedEditionSection.scss';
 
 const LimitedEditionSection = () => {
+    const { limitedEdition, addToCart } = useContext(ProductsContext);
+
     return (
         <div className='LimitedEdition'>
             <div className="container">
@@ -40,13 +37,8 @@ const LimitedEditionSection = () => {
                     slidesPerView={4}
                     navigation={{ clickable: true }}
                     pagination={{ clickable: true }}
-                    // autoplay={{
-                    //     delay: 2500,
-                    //     disableOnInteraction: false,
-                    // }}
-                    // loop={true}
                 >
-                    {LimitedEditionData.map((product) => (
+                    {limitedEdition.map((product) => (
                         <SwiperSlide key={product.id}>
                             <ProductCart
                                 image={product.image}
@@ -56,6 +48,7 @@ const LimitedEditionSection = () => {
                                 text={product.text}
                                 to='/'
                                 hasHoverImage={false}
+                                onAddToCart={() => addToCart(product)}
                             />
                         </SwiperSlide>
                     ))}
@@ -63,6 +56,6 @@ const LimitedEditionSection = () => {
             </div>
         </div>
     );
-}
+};
 
 export default LimitedEditionSection;

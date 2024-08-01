@@ -95,9 +95,8 @@ export const ProductCartData = [
     {
         id: 1,
         image: require('./img/product_1.webp'),
-        hoverImage: require('./img/product_1hover.webp'),
         heading: 'Cropped Faux Leather Jacket',
-        price: '$29',
+        price: 29,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -110,9 +109,8 @@ export const ProductCartData = [
     {
         id: 2,
         image: require('./img/product_2.webp'),
-        hoverImage: require('./img/product_2hover.webp'),
         heading: 'Calvin Shorts',
-        price: '$62',
+        price: 62,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -124,9 +122,8 @@ export const ProductCartData = [
     {
         id: 3,
         image: require('./img/product_3.webp'),
-        hoverImage: require('./img/product_3hover.webp'),
         heading: 'Kirby T-Shirt',
-        price: '$17',
+        price: 17,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -138,9 +135,8 @@ export const ProductCartData = [
     {
         id: 4,
         image: require('./img/product_4.webp'),
-        hoverImage: require('./img/product_4hover.webp'),
         heading: 'Cableknit Shawl',
-        price: '$99',
+        price: 99,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -152,9 +148,8 @@ export const ProductCartData = [
     {
         id: 5,
         image: require('./img/product_5.webp'),
-        hoverImage: require('./img/product_5hover.webp'),
         heading: 'Colorful Jacket',
-        price: '$28',
+        price: 28,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -166,9 +161,8 @@ export const ProductCartData = [
     {
         id: 6,
         image: require('./img/product_6.webp'),
-        hoverImage: require('./img/product_6hover.webp'),
         heading: 'Shirt In Botanical Cheetah Print',
-        price: '$64',
+        price: 64,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -180,9 +174,8 @@ export const ProductCartData = [
     {
         id: 7,
         image: require('./img/product_7.webp'),
-        hoverImage: require('./img/product_7hover.webp'),
         heading: 'Cotton Jersey T-Shirt',
-        price: '$18',
+        price: 18,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -194,9 +187,8 @@ export const ProductCartData = [
     {
         id: 8,
         image: require('./img/product_8.webp'),
-        hoverImage: require('./img/product_8hover.webp'),
         heading: 'Zessi Dresses',
-        price: '$118',
+        price: 118,
         starIcons: [
             { id: 1-1, icon: <i className="star_icon ri-star-fill"></i>, },
             { id: 1-2, icon: <i className="star_icon ri-star-fill"></i>, },
@@ -230,49 +222,49 @@ export const LimitedEditionData = [
         image: require('./img/limited-edition-img1.webp'),
         hoverImage: null,
         heading: 'Cushion Futon Slipcover',
-        price: '$62',
+        price: 62,
     },
     {
         id: 2,
         image: require('./img/limited-edition-img2.webp'),
         hoverImage: null,
         heading: 'Hosking Blue Area Rug',
-        price: '$29',
+        price: 29,
     },
     {
         id: 3,
         image: require('./img/limited-edition-img3.webp'),
         hoverImage: null,
         heading: 'Hub Accent Mirror',
-        price: '$17',
+        price: 17,
     },
     {
         id: 4,
         image: require('./img/limited-edition-img4.webp'),
         hoverImage: null,
         heading: 'Hub Accent Mirror',
-        price: '$78',
+        price: 78,
     },
     {
         id: 5,
         image: require('./img/limited-edition-img1.webp'),
         hoverImage: null,
         heading: 'Cushion Futon Slipcover',
-        price: '$62',
+        price: 62,
     },
     {
         id: 6,
         image: require('./img/limited-edition-img2.webp'),
         hoverImage: null,
         heading: 'Hosking Blue Area Rug',
-        price: '$29',
+        price: 29,
     },
     {
         id: 7,
         image: require('./img/limited-edition-img3.webp'),
         hoverImage: null,
         heading: 'Hub Accent Mirror',
-        price: '$17',
+        price: 17,
     },
 ];
 
@@ -344,10 +336,11 @@ export const FooterNavigationData = [
             { id: 3, name: 'Find a Store', },
             { id: 4, name: 'Legal & Privacy', },
             { id: 5, name: 'Contact', },
-            { id: 5, name: 'Gift Card', },
+            { id: 6, name: 'Gift Card', }, // Updated id to 6
         ]
     },
 ];
+
 
 export const PaymentLogos = [
     { id: 1, logo: require('./img/payment-logo1.png'), logoText: 'Discover Network Logo' },

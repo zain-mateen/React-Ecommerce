@@ -9,7 +9,7 @@ import ThemeBtn from '../ThemeBtn/ThemeBtn';
 const LimitedItemSection = () => {
     return (
         <>
-            <section class="LimitedItem">
+            <section className="LimitedItem">
                 <div className="container_fluid2">
                     <div className="limitedItem_inr">
                         <div className="wrapper">
