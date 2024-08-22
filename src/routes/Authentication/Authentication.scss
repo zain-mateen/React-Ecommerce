@@ -1,0 +1,59 @@
+@import '../../common-styles/variables.scss';
+
+.Authentication{
+    padding: 72px 0;
+    margin-top: 96px;
+
+    @media (max-width: 991.98px) {
+        padding: 48px 0;
+        margin-top: 60px;
+    }
+
+    .container{
+
+        .Authentication_inr{
+            width: 500px;
+            max-width: 100%;
+            margin: auto;
+
+            .nav-pills{
+                margin-bottom: 32px;
+                gap: 32px;
+
+                .nav-item{
+
+                    .nav-link{
+                        font-size: $font-size-16px;
+                        line-height: $line-height-24px;
+                        font-family: $font-family-Jost-Medium;
+                        color: #767676;
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        padding: 0;
+                        position: relative;
+
+                        &::after{
+                            content: '';
+                            width: 0;
+                            height: 3px;
+                            background-color: $text-color;
+                            border-radius: 8px;
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            transition: .3s;
+                        }
+                    }
+
+                    .active{
+                        color: $text-color;
+
+                        &::after{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

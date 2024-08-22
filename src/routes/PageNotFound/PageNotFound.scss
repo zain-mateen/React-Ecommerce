@@ -1,0 +1,52 @@
+@import '../../common-styles/variables.scss';
+
+.PageNotFound{
+    padding: 72px 0;
+    margin-top: 96px;
+
+    @media (max-width: 991.98px) {
+        padding: 48px 0;
+        margin-top: 60px;
+    }
+
+    .wrapper_otr{
+        width: 750px;
+        max-width: 100%;
+        margin: auto;
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .error_heading{
+                text-transform: uppercase;
+                font-size: 100px;
+                line-height: 1.2;
+                font-family: $font-family-Jost-Bold;
+                color: $text-color;
+                letter-spacing: -.08px;
+            }
+
+            .heading{
+                color: $text-color;
+                margin: 16px 0;
+            }
+
+            .desc{
+                color: $text-color;
+            }
+
+            .action_otr{
+                display: flex;
+                justify-content: center;
+                margin-top: 24px;
+
+                .action_inr{
+                    width: 340px;
+                }
+            }
+        }
+    }
+}

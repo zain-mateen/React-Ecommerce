@@ -1,0 +1,24 @@
+@import '../../common-styles/variables.scss';
+
+.button_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 16px 48px;
+    background-color: $White;
+    font-size: $font-size-16px;
+    font-family: $font-family-Jost-Medium;
+    border: none;
+    outline: none;
+    transition: .3s;
+
+    &:hover{
+        filter: brightness(.95);
+    }
+
+    &.dark{
+        background-color: $text-color;
+        color: $White;
+    }
+}

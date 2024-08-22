@@ -1,0 +1,25 @@
+@import '../../common-styles/variables.scss';
+
+.sign_up{
+
+    .sign_up_form{
+
+        .input_main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .desc{
+            margin: 20px 0;
+            color: $text-secondary;
+        }
+
+        .action_otr{
+
+            .dark{
+                width: 100%;
+            }
+        }
+    }
+}

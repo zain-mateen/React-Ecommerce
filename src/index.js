@@ -7,18 +7,21 @@ import './index.scss';
 import App from './App';
 import './fonts/fonts.css';
 
-import { ProductsProvider } from './context/ProductContext';
+import { CategoriesProvider } from './context/CategoriesContext';
 import { CartProvider } from './context/CartContext';
+import { WishlistProvider } from './context/WishlistContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ProductsProvider>
-        <CartProvider>
-          <App />
-        </CartProvider>
-      </ProductsProvider>
+      <CategoriesProvider>
+        <WishlistProvider>
+          <CartProvider>
+            <App />
+          </CartProvider>
+        </WishlistProvider>
+      </CategoriesProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

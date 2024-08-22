@@ -1,0 +1,35 @@
+@import '../../common-styles/variables.scss';
+
+.sign_in{
+
+    .sign_in_form{
+
+        .input_main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form_check{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 24px 0;
+
+            .checkout{
+
+            }
+
+            .form_check_label{
+                color: $text-color;
+            }
+        }
+
+        .action_otr{
+
+            .dark{
+                width: 100%;
+            }
+        }
+    }
+}

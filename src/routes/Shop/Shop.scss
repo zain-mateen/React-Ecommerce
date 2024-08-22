@@ -1,0 +1,19 @@
+@import '../../common-styles/variables.scss';
+
+.Shop{
+    padding: 72px 0;
+    margin-top: 96px;
+
+    @media (max-width: 991.98px) {
+        padding: 48px 0;
+        margin-top: 60px;
+    }
+
+    .container{
+
+        .shop_inr{
+            display: grid;
+            gap: 20px;
+        }
+    }
+}

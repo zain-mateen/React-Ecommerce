@@ -1,0 +1,357 @@
+@import '../../common-styles/variables.scss';
+
+.BlogDetail{
+    padding: 72px 0;
+    margin-top: 96px;
+
+    @media (max-width: 991.98px) {
+        padding: 48px 0;
+        margin-top: 60px;
+    }
+
+    .container{
+
+        .wrapper_otr{
+            display: flex;
+            justify-content: center;
+
+            .wrapper_inr{
+                
+                .heading{
+                    color: $text-color;
+                }
+
+                .text_otr{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-top: 20px;
+
+                    .text{
+                        text-transform: uppercase;
+                        color: $text-color;
+                        padding: 3px 10px;
+                        background-color: $border-color;
+                    }
+                }
+            }
+        }
+
+        .img_otr{
+            margin: 32px 0;
+            display: none;
+            
+            .img{
+                // width: 100%;
+                // height: 550px;
+                // object-fit: cover;
+                // object-position: top;
+
+                // @media (max-width: 1440px) {
+                //     height: 430px;
+                // }
+
+                // @media (max-width: 1200px) {
+                //     height: 350px;
+                // }
+
+                // @media (max-width: 991.98px) {
+                //     height: auto;
+                // }
+            }
+        }
+
+        .row_custom{
+            display: flex;
+            justify-content: center;
+
+            .col_main_content_otr{
+
+                .col_main_content_inr{
+
+                    .desc_bold{
+                        color: $text-color;
+                    }
+
+                    .heading{
+                        color: $text-color;
+                    }
+
+                    .desc{
+                        color: $text-secondary;
+                    }
+
+                    .row_custom_2{
+
+                        .custon_column_otr{
+
+                            .custon_column_inr{
+
+                                .heading{
+                                    color: $text-color;
+                                }
+
+                                .list_ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 8px 0;
+                                    margin-top: 16px;
+                                    padding-left: 18px;
+
+                                    .list_li{
+                                        color: $text-secondary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .img_main{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 20px;
+
+                        .img{
+                            width: 100%;
+                            height: 500px;
+                            object-fit: cover;
+                            object-position: top;
+
+                            @media (max-width: 1200px) {
+                                height: 400px;
+                            }
+
+                            @media (max-width: 991.98px) {
+                                height: 300px;
+                            }
+
+                            @media (max-width: 767.98px) {
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .share_ul{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        margin: 24px 0;
+
+                        .share_li{
+
+                            .share_button{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 0 12px;
+                                width: 100%;
+                                padding: 10px 26px;
+                                background-color: $text-color;
+                                font-size: $font-size-16px;
+                                font-family: $font-family-Jost-Medium;
+                                border: none;
+                                outline: none;
+                                transition: .3s;
+
+                                @media (max-width: 1200px) {
+                                    padding: 8px 16px;
+                                }
+
+                                .icon{
+                                    font-size: 20px;
+                                    color: $White;
+                                }
+
+                                .text{
+                                    color: $White;
+                                }
+                            }
+
+                            .facebook_btn{
+                                background-color: #306199;
+                            }
+
+                            .twitter_btn{
+                                background-color: #26c4f1;
+                            }
+
+                            .pinterest_btn{
+                                background-color: #e82b2d;
+                            }
+                        }
+                    }
+
+                    .review_main{
+
+                        .heading{
+                            color: $text-color;
+                        }
+
+                        .review_ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px 0;
+                            margin-top: 24px;
+
+                            .review_li{
+                                display: grid;
+                                grid-template-columns: auto 1fr;
+                                gap: 0 24px;
+
+                                .profile_otr{
+                                    width: 60px;
+                                    height: 60px;
+                                    background-color: $border-color;
+                                    border-radius: 100%;
+                                }
+
+                                .review_content{
+
+                                    .profile_details_star_otr{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin-bottom: 24px;
+
+                                        .profile_details{
+
+                                            .heading{
+                                                color: $text-color;
+                                                margin-bottom: 2px;
+                                            }
+
+                                            .text{
+                                                color: $text-secondary;
+                                            }
+                                        }
+
+                                        .star_ul{
+                                            display: flex;
+                                            align-items: center;
+
+                                            .star_li{
+
+                                                .star_icon{
+                                                    font-size: 12px;
+                                                    color: #ffc78b;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .desc{
+                                        color: $text-secondary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .review_form{
+
+                        .form_inr{
+
+                            .heading{
+                                color: $text-color;
+                            }
+
+                            .desc{
+                                color: $text-secondary;
+                            }
+
+                            .star_rating{
+                                display: flex;
+
+                                .text{
+                                    color: $text-secondary;
+                                }
+
+                                .star_ul{
+                                    display: flex;
+                                    align-items: center;
+
+                                    .star_li{
+
+                                        .star_icon{ 
+                                            font-size: 12px;
+                                            color: #ccc;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .textarea_otr{
+
+                                .textarea{
+                                    width: 100%;
+                                    height: 220px;
+                                    resize: none;
+                                    padding: .9375rem .9375rem .75rem;
+                                    font-size: $font-size-14px;
+                                    line-height: 1.2;
+                                    font-family: $font-family-Jost-Regular;
+                                    outline: none;
+                                    border: 2px solid $border-color;
+
+                                    &:focus{
+                                        outline: none;
+                                    }
+                                }
+                            }
+
+                            .input_otr{
+                                position: relative;
+
+                                .review_input_label{
+                                    position: absolute;
+                                    top: -1.00000625rem;
+                                    left: 1rem;
+                                    margin: 0;
+                                    padding: .25rem .5rem;
+                                    background-color: #fff;
+                                    color: #222;
+                                    z-index: 1;
+                                }
+                            }
+
+                            .form_check{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 8px;
+
+                                .checkbox{
+
+                                }
+
+                                .form_check_label{
+                                    color: $text-secondary;
+                                }
+                            }
+
+                            .form_action{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mt_20{
+    margin-top: 20px;
+}
+
+.mb_20{
+    margin-bottom: 20px;
+}
+
+.ls_disk{
+    list-style: disc;
+}
+
+.ls_auto{
+    list-style: auto;
+}

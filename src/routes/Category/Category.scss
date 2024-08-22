@@ -1,0 +1,14 @@
+@import '../../common-styles/variables.scss';
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 24px;
+}
+
+.categpry_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}

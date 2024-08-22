@@ -1,0 +1,42 @@
+@import '../../common-styles/variables.scss';
+
+.TermsPage{
+    padding: 72px 0;
+    margin-top: 96px;
+
+    @media (max-width: 991.98px) {
+        padding: 48px 0;
+        margin-top: 60px;
+    }
+
+    .container{
+
+        .row_custom{
+            justify-content: center;
+
+            .col_content_otr{
+
+                .title{
+                    text-transform: uppercase;
+                    color: $text-color;
+                }
+
+                .terms_item{
+
+                    .heading{
+                        color: $text-color;
+                        margin: 24px 0 16px;
+
+                        @media (max-width: 575.98px) {
+                            margin: 16px 0 6px;
+                        }
+                    }
+
+                    .desc{
+                        color: $text-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
