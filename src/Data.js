@@ -18,7 +18,7 @@ export const NavigationItems = [
         ]
     },
     { id: 5, name: 'About', link: '/about' },
-    { id: 6, name: 'Contact', link: '/' },
+    { id: 6, name: 'Contact', link: '/contact' },
 ];
 
 export const HeaderTools = [

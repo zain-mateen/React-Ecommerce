@@ -17,28 +17,28 @@
 
     .container_fluid {
 
-        .logo_main {
+        .logo_main{
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 24px 0;
 
-            .logo_otr {
+            .logo_otr{
 
-                .logo_img {
+                .logo_img{
                     width: 96px;
                     height: auto;
                 }
             }
 
-            .close_menu_icon {
+            .close_menu_icon{
                 cursor: pointer;
-                
-                .icon {
+
+                .icon{
                     font-size: 24px;
                     color: $text-color;
                     transition: .3s;
-
+                
                     &:hover {
                         color: $Primary-color;
                     }

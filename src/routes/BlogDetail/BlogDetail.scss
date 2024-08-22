@@ -262,9 +262,10 @@
 
                             .star_rating{
                                 display: flex;
+                                gap: 0 8px;
 
                                 .text{
-                                    color: $text-secondary;
+                                    color: $text-color;
                                 }
 
                                 .star_ul{

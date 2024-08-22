@@ -17,7 +17,7 @@ const Category = () => {
 
     return (
         <>
-            <h2 className='heading heading-h2-bold'>{category}</h2>
+            <h2 className='category_heading heading-h2-bold'>{category}</h2>
             <div className='categpry_container'>
                 {products &&
                     products.map((product) => (
