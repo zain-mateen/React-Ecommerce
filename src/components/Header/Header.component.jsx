@@ -7,7 +7,7 @@ import CartIcon from '../CartIcon/CartIcon.component';
 import CartSlideShow from '../CartSlideShow/CartSlideShow.component';
 import { onAuthStateChangedListener, signOutUser } from '../../utils/Firebase/Firebase.utils';
 
-import './Header.styles.js';
+import './Header.styles.scss';
 
 import brandLogo from '../../img/brandLogo.webp';
 import WishlistIcon from '../WishlistIcon/WishlistIcon.component';
