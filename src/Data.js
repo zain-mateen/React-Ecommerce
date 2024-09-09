@@ -345,7 +345,6 @@ export const FooterNavigationData = [
     },
 ];
 
-
 export const PaymentLogos = [
     { id: 1, logo: require('./img/payment-logo1.png'), logoText: 'Discover Network Logo' },
     { id: 2, logo: require('./img/payment-logo2.png'), logoText: 'MasterCard Logo' },
@@ -785,5 +784,67 @@ export const SHOP_DATA = [
         },
       ],
     },
-  ];
-  
+];
+
+export const FaqData = [
+  {
+      category: "Orders",
+      questions: [
+          {
+              id: 1,
+              question: "Bring of had which their whose you're it own?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          },
+          {
+              id: 2,
+              question: "Over shall air can't subdue fly divide him?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          },
+          {
+              id: 3,
+              question: "Waters one you'll creeping?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          }
+      ]
+  },
+  {
+      category: "Shipping",
+      questions: [
+          {
+              id: 1,
+              question: "Bring of had which their whose you're it own?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          {
+              id: 2,
+              question: "Over shall air can't subdue fly divide him?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          {
+              id: 3,
+              question: "Waters one you'll creeping?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+      ]
+  },
+  {
+      category: "Payment",
+      questions: [
+          {
+              id: 1,
+              question: "Bring of had which their whose you're it own?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          {
+              id: 2,
+              question: "Over shall air can't subdue fly divide him?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          {
+              id: 3,
+              question: "Waters one you'll creeping?",
+              answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+      ]
+  }
+];

@@ -14,6 +14,7 @@ import Authentication from "./routes/Authentication/Authentication";
 import Footer from './components/Footer/Footer.component';
 import Shop from "./routes/Shop/Shop";
 import Contact from "./routes/Contact/Contact";
+import Faq from "./routes/Faq/Faq";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="auth" element={<Authentication />} />
         <Route path="shop/*" element={<Shop />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="faq" element={<Faq />} />
       </Routes>
       <Footer />
     </>
