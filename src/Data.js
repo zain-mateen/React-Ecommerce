@@ -11,7 +11,7 @@ export const NavigationItems = [
             { id: 4.2, name: 'Login / Register', link: '/' },
             { id: 4.3, name: 'Store Locator', link: '/' },
             { id: 4.4, name: 'Lookbook', link: '/lookbook' },
-            { id: 4.5, name: 'Faq', link: '/' },
+            { id: 4.5, name: 'Faq', link: '/faq' },
             { id: 4.6, name: 'Terms', link: '/terms' },
             { id: 4.7, name: '404 Error', link: '/page-not-found' },
             { id: 4.8, name: 'Coming Soon', link: '/coming-soon' },
